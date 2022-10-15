@@ -1,6 +1,12 @@
 def factorial(num)
-  result = 2
-  num..1 { |n| result*=n }
+  result = 1
+  for i in 1..num
+    result *= i
+  end
+  return result
 end
 
-puts factorial(3)
+puts "5! = #{factorial(5)}"
+puts "6! = #{factorial(6)}"
+puts "7! = #{factorial(7)}"
+puts "8! = #{factorial(8)}"
